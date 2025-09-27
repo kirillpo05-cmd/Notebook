@@ -1,5 +1,7 @@
 body{
-    background-color: #9C1A1C;
+    background-image: url('../../pictures/oceansunset.jpg'); /* путь к изображению */
+    background-repeat: no-repeat;   /* чтобы изображение не повторялось */
+    background-position: center;    /* центрируем изображение */
 }
 .button1{
     background-color: #11557C;
