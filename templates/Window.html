@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <title>HElP</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+    function openRegisterWindow() {
+      // открываем новое окно
+      let regWindow = window.open("", "Регистрация", "width=400,height=400");
 
+      // заполняем его содержимым (HTML-код формы регистрации)
+      regWindow.document.write(`
+        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+          <meta charset="UTF-8">
+          <title>Registration</title>Registration
+          <style>
+            body { font-family: Arial, sans-serif; padding: 20px; }
+            form { display: flex; flex-direction: column; gap: 10px; }
+            input { padding: 8px; border-radius: 5px; border: 1px solid #ccc; }
+            button { padding: 10px; border: none; border-radius: 5px; background: #4CAF50; color: white; cursor: pointer; }
+            button:hover { background: #45a049; }
+          </style>
+        </head>
+        <body>
+          <h2>Форма регистрации</h2>
+          <form>
+            <input type="text" placeholder="Логин" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+          </form>
+        </body>
+        </html>
+      `);
+    }
+  </script>
 </head>
 <body>
 <h1>VV</h1>
 <button onclick="window.close()">Close</button>
+<button class="button1" onclick="openRegisterWindow()">Open Registration</button>
 <p>Ivan WW, created good thing</p>
 </body>
 </html>
