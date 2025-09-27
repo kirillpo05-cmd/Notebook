@@ -4,6 +4,38 @@ body{
     background-position: center;    /* центрируем изображение */
 }
 .button1{
-    background-color: #11557C;
-    border-style: dashed;
+    display: block;      /* каждая кнопка на новой строке */
+    margin: 50px auto;   /* вертикальный отступ + выравнивание по центру */
+    background-color: #11557C;    /* цвет кнопки */
+    color: white;                 /* цвет текста */
+    border: 2px solid white;      /* рамка: толщина 2px, сплошная, белая */
+    border-radius: 8px;           /* скругление углов */
+    padding: 10px 20px;           /* внутренние отступы */
+    cursor: pointer;              /* курсор при наведении */
+
+    font-size: 16px;              /* размер текста */
+}
+/* Для эффекта при наведении */
+.button1:hover {
+    background-color: white;
+    color: #11557C;
+    border-color: #11557C;
+}
+.button-window {
+    border: 3px solid #11557C;   /* рамка вокруг "окошка" */
+    border-radius: 20px;          /* скруглённые углы */
+    padding: 20px;                /* внутренние отступы */
+    width: 400px;                 /* ширина окна */
+    height: 250px;                /* высота окна */
+    text-align: center;           /* выравнивание содержимого по центру */
+    background-color: rgba(255, 255, 255, 0.1); /* полупрозрачный фон (опционально) */
+    margin: 50px auto;            /* выравнивание по центру страницы */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* тень для "окошка" */
+}
+
+h1 {
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 80px;
+  color: #11557C;
+  text-align: center;
 }
